@@ -9,3 +9,7 @@ spring:
     name: order
 server:
   port: 8082
+
+girl:
+  name: Yuna
+  age:  18
