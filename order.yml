@@ -5,6 +5,11 @@ spring:
     url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
     username: root
     password: ffx10101fsn
+  rabbitmq:
+    username: guest
+    password: sq144238
+    port: 5672
+    host: localhost
 girl:
   name: Yuna
   age:  19
