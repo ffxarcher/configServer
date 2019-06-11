@@ -6,6 +6,7 @@ zuul:
   ###排除某些路由
   ignored-patterns:
     - /**/product/listForOrder
+    - /**/product/list
 #  一般路由配置//sensitiveheaders为空则不会过滤cookie
 #    prodcut:
 #      path: /myProduct/**
