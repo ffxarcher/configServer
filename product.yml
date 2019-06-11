@@ -1,5 +1,4 @@
 env: dev
-spring:
   rabbitmq:
     username: guest
     password: sq144238
