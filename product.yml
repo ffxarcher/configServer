@@ -1,4 +1,4 @@
-env: dev3
+env: dev
 spring:
   rabbitmq:
     username: guest
