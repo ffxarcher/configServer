@@ -1,15 +1,8 @@
 env: dev
 spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    password: ffx10101fsn
-    url: jdbc:mysql://localhost:3306/spring?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-    username: root
   rabbitmq:
     username: guest
     password: sq144238
     port: 5672
     host: 47.102.97.1
-  redis:
-    host: localhost
-    port: 6379
+  
