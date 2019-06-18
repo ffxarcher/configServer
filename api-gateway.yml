@@ -1,16 +1,16 @@
 env: dev
-#路由规则serviceId+路由地址
-zuul:
-  routes:
-    product: /myProduct/**
-  ###排除某些路由
-  ignored-patterns:
-    - /**/product/listForOrder
-#  一般路由配置//sensitiveheaders为空则不会过滤cookie
-#    prodcut:
-#      path: /myProduct/**
-#      serviceId: product
-#      sensitiveheaders:
+# #路由规则serviceId+路由地址
+# zuul:
+#   routes:
+#     product: /myProduct/**
+#   ###排除某些路由
+#   ignored-patterns:
+#     - /**/product/listForOrder
+# #  一般路由配置//sensitiveheaders为空则不会过滤cookie
+# #    prodcut:
+# #      path: /myProduct/**
+# #      serviceId: product
+# #      sensitiveheaders:
 spring:
   rabbitmq:
     username: guest
