@@ -5,3 +5,11 @@ spring:
     password: sq144238
     port: 5672
     host: 47.102.97.1
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: ffx10101fsn
+  redis:
+    host: 127.0.0.1
+    port: 6379
