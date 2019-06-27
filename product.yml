@@ -6,11 +6,11 @@ spring:
     port: 5672
     host: 47.102.97.1
   ##以下为本地数据库配置
-#   datasource:
-#     driver-class-name: com.mysql.jdbc.Driver
-#     url: jdbc:mysql://192.168.67.244:3306/spring?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8
-#     username: root
-#     password: ffx10101fsn
-#   redis:
-#     host: 192.168.67.244
-#     port: 6379
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: ffx10101fsn
+  redis:
+    host: 127.0.0.1
+    port: 6379
