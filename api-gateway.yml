@@ -1,6 +1,7 @@
 env: dev
 #路由规则serviceId+路由地址
 zuul:
+  sensitive-headers: 
   routes:
     product: /myProducttest/**
   ###排除某些路由
