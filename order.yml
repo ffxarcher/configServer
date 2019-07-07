@@ -31,6 +31,32 @@ spring:
     password: sq144238
     port: 5672
     host: 47.102.97.1
+#default默认全局设置
+#可以使用方法名作为keyname单个配置
+#服务降级、熔断、设置超时
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    getProductInfo:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    org.springframework.cloud.openfeign.FeignClient: debug
 girl:
   name: Yuna
   age:  22
