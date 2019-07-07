@@ -43,11 +43,6 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 1000
-    getProductInfo:
-      execution:
-        isolation:
-          thread:
             timeoutInMilliseconds: 3000
 feign:
   hystrix:
