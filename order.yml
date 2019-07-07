@@ -16,9 +16,45 @@ spring:
         topic-output:
           destination: aaa-topic
           group: order
+          
+  zipkin:
+    base-url: http://127.0.0.1:9411/
+    sender:
+      type: web
+  sleuth:
+    sampler:
+      probability: 1.0
+      
+      
   redis:
     host: 127.0.0.1
     port: 6379
   rabbitmq:
     username: guest
     password: sq144238
+  #default默认全局设置
+#可以使用方法名作为keyname单个配置
+#
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 1000
+    getProductInfo:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
+feign:
+  hystrix:
+    enabled: true
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+logging:
+  level:
+    org.springframework.cloud.openfeign.FeignClient: debug
