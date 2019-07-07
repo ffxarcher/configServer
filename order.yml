@@ -1,5 +1,20 @@
 env: dev
-
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/spring?useUnicode=true&characterEncoding=utf8&characterSetResults=utf8&useSSL=false
+    username: root
+    password: ffx10101fsn
+  ##将order消息的输入输出绑定到同一个topic下实现自产自消//多实例可以分组关键字group
+   stream:
+     bindings:
+        ###双通道
+       topic-input:
+         destination: aaa-topic
+         group: order
+       topic-output:
+         destination: aaa-topic
+         group: order
 girl:
   name: Yuna
   age:  22
