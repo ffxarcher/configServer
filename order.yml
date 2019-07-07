@@ -32,7 +32,9 @@ spring:
   rabbitmq:
     username: guest
     password: sq144238
-  #default默认全局设置
+    port: 5672
+    host: 47.102.97.1
+#default默认全局设置
 #可以使用方法名作为keyname单个配置
 #
 hystrix:
